@@ -1,0 +1,43 @@
+﻿<Window x:Class="GreenHorn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenHorn"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"    
+        WindowStartupLocation="CenterScreen"
+        Title="Green Horn Recruits" Height="485" Width="900"
+        Closed="Window_Closed"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Name="Lbl_Username" Content="" HorizontalAlignment="Left" Margin="691,376,0,0" VerticalAlignment="Top" Grid.Column="1" Foreground="MediumPurple"/>
+
+        <Button x:Name="Btn_Login" Content="Login" HorizontalAlignment="Left" Margin="566,375,0,0" VerticalAlignment="Top" Width="250" IsEnabled="True" Click="Btn_Login_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Companies" Content="Companies" HorizontalAlignment="Left" Margin="566,20,0,0" VerticalAlignment="Top" Width="250" IsEnabled="False" Click="Btn_Companies_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Candidates" Content="Candidates" HorizontalAlignment="Left" Margin="566,57,0,0" VerticalAlignment="Top" Width="250" IsEnabled="False" Click="Btn_Candidates_Click" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="434" Margin="10,20,0,0" VerticalAlignment="Top" Width="581" Source="https://hr.sparkhire.com/wp-content/uploads/2015/09/Top-4-Reasons-to-Consider-Working-with-a-Recruiting-Agency.jpg" Grid.ColumnSpan="2"/>
+        <Button x:Name="Btn_Positions" Content="Employment Requests" IsEnabled="False" HorizontalAlignment="Left" Margin="566,94,0,0" VerticalAlignment="Top" Width="250" Click="Btn_Positions_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Applications" Content="Applications" IsEnabled="False" HorizontalAlignment="Left" Margin="566,131,0,0" VerticalAlignment="Top" Width="250" Click="Btn_Applications_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Statistics" Content="Statistics" IsEnabled="False" HorizontalAlignment="Left" Margin="566,203,0,0" VerticalAlignment="Top" Width="250" Click="Btn_Statistics_Click" Grid.Column="1"/>
+        <Button x:Name="Btn_Reports" Content="Reports" IsEnabled="False" HorizontalAlignment="Left" Margin="566,240,0,0" VerticalAlignment="Top" Width="250" Click="Btn_Reports_Click" Grid.Column="1"/>
+
+
+
+
+    </Grid>
+</Window>

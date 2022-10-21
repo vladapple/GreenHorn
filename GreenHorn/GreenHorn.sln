@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenHorn", "GreenHorn.csproj", "{38EB662D-09B1-4169-8F98-55F9DDE12E4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C38F1410-B6E1-41F0-9A02-649BC5454A7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenHorn.UnitTests", "..\GreenHorn.UnitTests\GreenHorn.UnitTests.csproj", "{8801474C-B048-4940-81D5-106DDD76A0DB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GreenHornSetup", "..\GreenHornSetup\GreenHornSetup.vdproj", "{CF130386-7B3A-46A4-BD41-10E082912730}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38EB662D-09B1-4169-8F98-55F9DDE12E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EB662D-09B1-4169-8F98-55F9DDE12E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EB662D-09B1-4169-8F98-55F9DDE12E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EB662D-09B1-4169-8F98-55F9DDE12E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8801474C-B048-4940-81D5-106DDD76A0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8801474C-B048-4940-81D5-106DDD76A0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8801474C-B048-4940-81D5-106DDD76A0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8801474C-B048-4940-81D5-106DDD76A0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF130386-7B3A-46A4-BD41-10E082912730}.Debug|Any CPU.ActiveCfg = Debug
+		{CF130386-7B3A-46A4-BD41-10E082912730}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A575C05-215D-4728-92AE-B1F100545834}
+	EndGlobalSection
+EndGlobal

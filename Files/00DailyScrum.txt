@@ -1,0 +1,152 @@
+This is the text file for Team 6's daily scrum!
+
+For easy linking, here is our trello board.
+https://trello.com/b/eAuImMI3/greenhorn
+
+1. What I have done / not done since last Scrum?
+2. What I plan to do from this scrum to next? (next 24 hours)
+3. Where do I need assistance? What do I need to figure out?
+------------------------------------------------------------
+
+Day 0:
+We all need to work together to start the project. 
+End scrum
+--------------
+
+12/10/2022
+Vlad:
+1) Done / Not done since Last Scrum:
+   Created, setup Trello,
+   AWS S3 bucket for cv storage (canceled after having meeting with Gregory),
+   DataBase Design
+2) To do until next Scrum:
+   Create database and tables in AZURE, 
+   Connect Azure to Visual Studio
+3) Need Assistance / figure things out
+
+Matthew:
+1) Done / Not done since Last Scrum:
+   Setup repository in Github
+   Started project in Visual Studio
+2) To do until next Scrum:
+   Material Design, Set up on the comp
+3) Need Assistance / figure things out
+
+Mitchell
+1) Done / Not done since Last Scrum:
+   Proposal document
+2) To do until next Scrum:
+   Sql script preparation
+3) Need Assistance / figure things out
+
+13/10/2022
+Vlad:
+1) Done / Not done since Last Scrum:
+   Created schema and tables in Azure,
+   Connected AZURE server to Visual Studio
+2) To do until next Scrum:
+   Login implementation, Crud Companies
+3) Need Assistance / figure things out
+
+Matthew:
+1) Done / Not done since Last Scrum:
+   Material Design, Set up on the comp
+2) To do until next Scrum:
+   positions windows
+3) Need Assistance / figure things out
+
+Mitchell
+1) Done / Not done since Last Scrum:
+   Sql script
+2) To do until next Scrum:
+   WPF review
+3) Need Assistance / figure things out
+
+15/10/2022
+Vlad:
+1) Done / Not done since Last Scrum:
+   Login Page, Crud Companies, Validations
+2) To do until next Scrum:
+   Candidates table with file dropbox, statistics
+3) Need Assistance / figure things out
+
+Matthew:
+1) Done / Not done since Last Scrum:
+   Industries crud, wpf positions
+2) To do until next Scrum:
+   finish positions window, applications
+3) Need Assistance / figure things out
+
+Mitchell
+1) Done / Not done since Last Scrum:
+   Create positions
+2) To do until next Scrum:
+   Finish create positions, rest of crud
+3) Need Assistance / figure things out
+   has casting error (matt help)
+
+17/10/2022
+Vlad:
+1) Done / Not done since Last Scrum:
+   Candidates window, Drag and Drop box, pdf fetching from sql blob
+2) To do until next Scrum:
+   Statistics window, exception error in double click pdf
+3) Need Assistance / figure things out
+
+Matthew:
+1) Done / Not done since Last Scrum:
+   finish crud applications window
+2) To do until next Scrum:
+   test applications, to finish positions
+3) Need Assistance / figure things out
+
+Mitchell
+1) Done / Not done since Last Scrum:
+   finish positions crud
+2) To do until next Scrum:
+   Unit tests
+3) Need Assistance / figure things out
+
+18/10/2022
+Vlad:
+1) Done / Not done since Last Scrum:
+   Charts in statistics window
+2) To do until next Scrum:
+   Statistics window
+3) Need Assistance / figure things out
+
+Matthew:
+1) Done / Not done since Last Scrum:
+   Indusries, applications
+2) To do until next Scrum:
+   Unit testing, bugs
+3) Need Assistance / figure things out
+
+Mitchell
+1) Done / Not done since Last Scrum:
+   Positions, Unit testing
+2) To do until next Scrum:
+   Unit testing, Data
+3) Need Assistance / figure things out
+
+19/10/2022
+Vlad:
+1) Done / Not done since Last Scrum:
+   Statistics finished, Reports finished
+2) To do until next Scrum:
+   Installer, presentation
+3) Need Assistance / figure things out
+
+Matthew:
+1) Done / Not done since Last Scrum:
+   Unit Testing, Double check, validations
+2) To do until next Scrum:
+   Presentation
+3) Need Assistance / figure things out
+
+Mitchell
+1) Done / Not done since Last Scrum:
+   Unit testing, Data into Database
+2) To do until next Scrum:
+   Presentation
+3) Need Assistance / figure things out

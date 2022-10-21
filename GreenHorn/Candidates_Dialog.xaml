@@ -1,0 +1,68 @@
+﻿<Window x:Class="GreenHorn.Candidates_Dialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenHorn"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+       ResizeMode="NoResize"
+        Loaded="Window_Loaded"
+        Title="Candidates" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <ListView Name="LvCandidates" HorizontalAlignment="Left" Height="226" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" SelectionChanged="LvCandidates_SelectionChanged" SelectionMode="Single" Grid.ColumnSpan="2" >
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding name}" />
+                    <GridViewColumn Header="Address" Width="120" DisplayMemberBinding="{Binding address}" />
+                    <GridViewColumn Header="Email" Width="120" DisplayMemberBinding="{Binding email}" />
+                    <GridViewColumn Header="Phone" Width="110" DisplayMemberBinding="{Binding phone}" />
+                    <GridViewColumn Header="Status" Width="100" DisplayMemberBinding="{Binding status}" />
+                    <GridViewColumn Header="CV" Width="80" DisplayMemberBinding="{Binding cvfileId}" />
+                    <GridViewColumn Header="Date" Width="120" DisplayMemberBinding="{Binding statusDate}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.043" Width="116" Height="30"/>
+        <TextBox Name="Tbx_Name" Background="#FFFFF6EC" HorizontalAlignment="Left" Height="35" Margin="68,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+
+        <Label Content="Address:" HorizontalAlignment="Left" Margin="10,287,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.043" Width="87" Height="30"/>
+        <TextBox x:Name="Tbx_Address" Background="#FFFFF6EC" HorizontalAlignment="Left" Height="36" Margin="68,281,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.043" Width="64" Height="30"/>
+        <TextBox x:Name="Tbx_Email" Background="#FFFFF6EC" HorizontalAlignment="Left" Height="36" Margin="68,322,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+
+        <Label Content="Phone:" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.043" Width="44" Height="30"/>
+        <TextBox x:Name="Tbx_Phone"  Background="#FFFFF6EC" HorizontalAlignment="Left" Height="34" Margin="68,363,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="156"/>
+
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="248,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.043" Width="44" Height="30"/>
+        <ComboBox x:Name="CbxStatus" Background="#FFFFF6EC" HorizontalAlignment="Left" Margin="297,246,0,0" VerticalAlignment="Top" Width="198"  SelectionChanged="CbxStatus_SelectionChanged" Height="34">
+            <ComboBoxItem Name="CbxItem" IsSelected="True" Content="applied"/>
+            <ComboBoxItem Content="reviewed"/>
+            <ComboBoxItem Content="interviewed"/>
+            <ComboBoxItem Content="rejected"/>
+            <ComboBoxItem Content="offered"/>
+            <ComboBoxItem Content="hired"/>
+        </ComboBox>
+
+        <Label Content="Date:" HorizontalAlignment="Left" Margin="251,281,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.043" Width="44" Height="30"/>
+        <DatePicker Name="DueDate" Background="#FFFFF6EC" SelectedDate="{x:Static sys:DateTime.Now}" Margin="300,285,302,0" VerticalAlignment="Top" ></DatePicker>
+
+        <StackPanel x:Name="FileDrop"  AllowDrop="True" Background="#b17cff" Margin="557,250,5,37" Drop="FileDrop_Drop">
+            <Label Content="Drop files here" HorizontalAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="White" />
+        </StackPanel>
+
+        <Button Name="BtnAdd" Content="Add" Click="BtnAdd_Click" HorizontalAlignment="Left" Margin="251,352,0,0" VerticalAlignment="Top" Width="63" IsEnabled="False"/>
+        <Button Name="BtnDelete" Content="Delete" HorizontalAlignment="Left" Margin="405,352,0,0" VerticalAlignment="Top" Width="93" Click="BtnDelete_Click" IsEnabled="False"/>
+        <Button Name="BtnUpdate" Content="Update" HorizontalAlignment="Left" Margin="319,352,0,0" VerticalAlignment="Top" Width="81" Click="BtnUpdate_Click" IsEnabled="False"/>
+        <Label Name="Lbl_Uploaded" Content="" HorizontalAlignment="Left" Margin="300,318,0,0" VerticalAlignment="Top" Width="180" Foreground="MediumPurple" MouseDoubleClick="LblFetchCV_Click"/>
+        <TextBox Text="" Name="Txb_CVFileId" HorizontalAlignment="Left" Margin="258,315,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="24" Height="27" BorderThickness="0,0,0,0" />
+        <WebBrowser Name="wb" Margin="457,397,5,22" />
+
+    </Grid>
+</Window>
